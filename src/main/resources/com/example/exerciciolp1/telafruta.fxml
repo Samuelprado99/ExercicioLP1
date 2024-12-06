@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #D3D3D3;;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exerciciolp1.Meucontrollerfruta">
+   <children>
+      <ImageView fitHeight="235.0" fitWidth="358.0" layoutX="14.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/Fruta.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="132.0" layoutY="4.0" prefHeight="21.0" prefWidth="338.0" text="Frutas">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font></Label>
+      <TextField fx:id="nome" alignment="CENTER" layoutX="378.0" layoutY="50.0" prefHeight="50.0" prefWidth="220.0" promptText="Nome">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cor" alignment="CENTER" layoutX="378.0" layoutY="108.0" prefHeight="50.0" prefWidth="220.0" promptText="Cor">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="peso" alignment="CENTER" layoutX="378.0" layoutY="167.0" prefHeight="50.0" prefWidth="220.0" promptText="Peso">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button id="btncadastar" layoutX="433.0" layoutY="234.0" mnemonicParsing="false" onAction="#btncadastar" prefHeight="31.0" prefWidth="110.0" text="Cadastar" />
+      <Button layoutX="29.0" layoutY="368.0" mnemonicParsing="false" onAction="#btnamadurecer" prefHeight="50.0" prefWidth="136.0" text="Amadurecer" />
+      <Button layoutX="242.0" layoutY="368.0" mnemonicParsing="false" onAction="#btncair" prefHeight="50.0" prefWidth="136.0" text="Cair" />
+      <Button layoutX="449.0" layoutY="368.0" mnemonicParsing="false" onAction="#btnapodrecer" prefHeight="50.0" prefWidth="136.0" text="Apodrecer" />
+      <ImageView fx:id="frutacaindo" fitHeight="316.0" fitWidth="368.0" layoutX="132.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@imagens/Frutacaindo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="frutaapodecer" fitHeight="342.0" fitWidth="450.0" layoutX="147.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@imagens/Frutaapodrecer.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="frutamadura" fitHeight="316.0" fitWidth="465.0" layoutX="104.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@imagens/FrutaMadura.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

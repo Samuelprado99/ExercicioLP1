@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #D3D3D3;;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exerciciolp1.MeuControllercarro">
+   <children>
+      <ImageView fitHeight="235.0" fitWidth="358.0" layoutX="14.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/carro.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="132.0" layoutY="4.0" prefHeight="21.0" prefWidth="338.0" text="Carros">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font></Label>
+      <TextField fx:id="nomecarro" alignment="CENTER" layoutX="378.0" layoutY="50.0" prefHeight="50.0" prefWidth="220.0" promptText="Nome/Apelido">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="marcacarro" alignment="CENTER" layoutX="378.0" layoutY="108.0" prefHeight="50.0" prefWidth="220.0" promptText="Marca">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="corcarro" alignment="CENTER" layoutX="378.0" layoutY="167.0" prefHeight="50.0" prefWidth="220.0" promptText="Cor">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button id="btncadastar" layoutX="433.0" layoutY="234.0" mnemonicParsing="false" onAction="#btncadastar" prefHeight="31.0" prefWidth="110.0" text="Cadastar" />
+      <Button layoutX="29.0" layoutY="368.0" mnemonicParsing="false" onAction="#btnligar" prefHeight="50.0" prefWidth="136.0" text="Ligar" />
+      <Button layoutX="242.0" layoutY="368.0" mnemonicParsing="false" onAction="#btndesligar" prefHeight="50.0" prefWidth="136.0" text="Desligar" />
+      <Button layoutX="449.0" layoutY="368.0" mnemonicParsing="false" onAction="#btnacelerar" prefHeight="50.0" prefWidth="136.0" text="Acelerar" />
+      <ImageView fx:id="carroacelerando" fitHeight="228.0" fitWidth="404.0" layoutX="132.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@imagens/carroacelerar.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="carrodesliga" fitHeight="245.0" fitWidth="384.0" layoutX="128.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@imagens/carrodesligado.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="carroligando" fitHeight="210.0" fitWidth="429.0" layoutX="106.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@imagens/carroligando.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

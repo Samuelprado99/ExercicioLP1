@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #D3D3D3;;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exerciciolp1.Meucontrollerprofissoes">
+   <children>
+      <ImageView fitHeight="235.0" fitWidth="358.0" layoutX="14.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/Classe%20profissoes.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="132.0" layoutY="4.0" prefHeight="21.0" prefWidth="338.0" text="Profissões">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font></Label>
+      <TextField fx:id="profissao" alignment="CENTER" layoutX="378.0" layoutY="50.0" prefHeight="50.0" prefWidth="220.0" promptText="Profissao">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="setor" alignment="CENTER" layoutX="378.0" layoutY="108.0" prefHeight="50.0" prefWidth="220.0" promptText="Setor">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="salario" alignment="CENTER" layoutX="378.0" layoutY="167.0" prefHeight="50.0" prefWidth="220.0" promptText="Salario">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button id="btncadastar" layoutX="433.0" layoutY="234.0" mnemonicParsing="false" onAction="#btncadastar" prefHeight="31.0" prefWidth="110.0" text="Cadastar" />
+      <Button layoutX="29.0" layoutY="368.0" mnemonicParsing="false" onAction="#btntrabalhar" prefHeight="50.0" prefWidth="136.0" text="Trabalhar" />
+      <Button layoutX="242.0" layoutY="368.0" mnemonicParsing="false" onAction="#btnrecebersalario" prefHeight="50.0" prefWidth="136.0" text="Receber o salario" />
+      <Button layoutX="449.0" layoutY="368.0" mnemonicParsing="false" onAction="#btntreinar" prefHeight="50.0" prefWidth="136.0" text="Treinamento" />
+      <ImageView fx:id="trabalhando" fitHeight="328.0" fitWidth="436.0" layoutX="153.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@imagens/Trabalhando.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="recebendosalario" fitHeight="260.0" fitWidth="545.0" layoutX="95.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@imagens/recebendodinheiro.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="recebertreinamento" fitHeight="260.0" fitWidth="522.0" layoutX="95.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@imagens/treinamentoequipe.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

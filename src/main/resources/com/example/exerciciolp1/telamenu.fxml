@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #D3D3D3;;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exerciciolp1.MeuControllermenu">
+   <children>
+      <Label alignment="CENTER" layoutX="132.0" layoutY="4.0" prefHeight="21.0" prefWidth="338.0" text="Exercicio LP1">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font></Label>
+      <Button contentDisplay="CENTER" layoutX="50.0" layoutY="107.0" mnemonicParsing="false" onAction="#btncachorro" prefHeight="39.0" prefWidth="219.0" text="Cachorro" />
+      <Button contentDisplay="CENTER" layoutX="50.0" layoutY="165.0" mnemonicParsing="false" onAction="#btncarro" prefHeight="39.0" prefWidth="219.0" text="Carro" />
+      <Button contentDisplay="CENTER" layoutX="50.0" layoutY="221.0" mnemonicParsing="false" onAction="#btnsapo" prefHeight="39.0" prefWidth="219.0" text="Sapo" />
+      <Button contentDisplay="CENTER" layoutX="50.0" layoutY="277.0" mnemonicParsing="false" onAction="#btnprofissoes" prefHeight="39.0" prefWidth="219.0" text="Profissões" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="342.0" mnemonicParsing="false" onAction="#btnfruta" prefHeight="39.0" prefWidth="219.0" text="Fruta" />
+      <Button layoutX="341.0" layoutY="107.0" mnemonicParsing="false" onAction="#btncasa" prefHeight="39.0" prefWidth="219.0" text="Casa" />
+      <Button layoutX="341.0" layoutY="165.0" mnemonicParsing="false" onAction="#btncobra" prefHeight="39.0" prefWidth="219.0" text="Cobra " />
+      <Button layoutX="341.0" layoutY="221.0" mnemonicParsing="false" onAction="#btnplanta" prefHeight="39.0" prefWidth="219.0" text="Planta" />
+      <Button layoutX="341.0" layoutY="277.0" mnemonicParsing="false" onAction="#btnrefrigerante" prefHeight="39.0" prefWidth="219.0" text="Refrigerante" />
+      <Button layoutX="341.0" layoutY="342.0" mnemonicParsing="false" onAction="#btnpessoas" prefHeight="39.0" prefWidth="219.0" text="Pessoas" />
+      <Label alignment="CENTER" layoutX="163.0" layoutY="58.0" prefHeight="21.0" prefWidth="277.0" text="Clique no botão">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

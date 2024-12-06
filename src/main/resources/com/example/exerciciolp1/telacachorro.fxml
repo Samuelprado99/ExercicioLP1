@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #D3D3D3;;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exerciciolp1.MeuControllercachorro">
+   <children>
+      <ImageView fitHeight="243.0" fitWidth="353.0" layoutX="14.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/cachorro.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="132.0" layoutY="4.0" prefHeight="21.0" prefWidth="338.0" text="Cachorro">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font></Label>
+      <TextField fx:id="Nome" alignment="CENTER" layoutX="378.0" layoutY="50.0" prefHeight="50.0" prefWidth="220.0" promptText="Nome/Apelido">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="raca" alignment="CENTER" layoutX="378.0" layoutY="108.0" prefHeight="50.0" prefWidth="220.0" promptText="Raça">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="peso" alignment="CENTER" layoutX="378.0" layoutY="167.0" prefHeight="50.0" prefWidth="220.0" promptText="Peso">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button id="btncadastar" layoutX="433.0" layoutY="234.0" mnemonicParsing="false" onAction="#btncadastar" prefHeight="31.0" prefWidth="110.0" text="Cadastar" />
+      <Button layoutX="29.0" layoutY="368.0" mnemonicParsing="false" onAction="#btncorrer" prefHeight="50.0" prefWidth="136.0" text="Correr" />
+      <Button layoutX="242.0" layoutY="368.0" mnemonicParsing="false" onAction="#btnlatir" prefHeight="50.0" prefWidth="136.0" text="Latir" />
+      <Button layoutX="449.0" layoutY="368.0" mnemonicParsing="false" onAction="#btndancar" prefHeight="50.0" prefWidth="136.0" text="Dançar" />
+      <ImageView fx:id="correndo" fitHeight="225.0" fitWidth="418.0" layoutX="125.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@imagens/Correndo.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dancando" fitHeight="333.0" fitWidth="369.0" layoutX="165.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@imagens/Dançando.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="latindo" fitHeight="351.0" fitWidth="300.0" layoutX="177.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@imagens/Latindo.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

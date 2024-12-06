@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exerciciolp1.MeuControllersapo">
+   <children>
+      <ImageView fitHeight="243.0" fitWidth="353.0" layoutX="15.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/Classe%20sapos.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="132.0" layoutY="4.0" prefHeight="21.0" prefWidth="338.0" text="Sapos">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nome" alignment="CENTER" layoutX="378.0" layoutY="50.0" prefHeight="50.0" prefWidth="220.0" promptText="Nome/Apelido">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="especie" alignment="CENTER" layoutX="378.0" layoutY="108.0" prefHeight="50.0" prefWidth="220.0" promptText="Cor">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tamanho" alignment="CENTER" layoutX="378.0" layoutY="167.0" prefHeight="50.0" prefWidth="220.0" promptText="Tamanho">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnCadastrar" layoutX="433.0" layoutY="234.0" mnemonicParsing="false" onAction="#btnCadastrar" prefHeight="31.0" prefWidth="110.0" text="Cadastrar" />
+      <Button layoutX="29.0" layoutY="368.0" mnemonicParsing="false" onAction="#btnPular" prefHeight="50.0" prefWidth="136.0" text="Pular" />
+      <Button layoutX="242.0" layoutY="368.0" mnemonicParsing="false" onAction="#btnCoaxar" prefHeight="50.0" prefWidth="136.0" text="Coaxar" />
+      <Button layoutX="449.0" layoutY="368.0" mnemonicParsing="false" onAction="#btnComerInseto" prefHeight="50.0" prefWidth="136.0" text="Comer Inseto" />
+      <ImageView fx:id="sapoComendo" disable="true" fitHeight="226.0" fitWidth="314.0" layoutX="180.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@imagens/Sapo%20comendo.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sapoPulando" disable="true" fitHeight="237.0" fitWidth="291.0" layoutX="213.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@imagens/Sapo%20pulando.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sapoCoaxando" disable="true" fitHeight="226.0" fitWidth="408.0" layoutX="213.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@imagens/SapoBarulho.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
