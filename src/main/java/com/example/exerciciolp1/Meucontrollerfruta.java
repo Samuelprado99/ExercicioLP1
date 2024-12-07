@@ -1,66 +1,74 @@
 package com.example.exerciciolp1;
 
+import DAO.FrutaDAO;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
-import javafx.stage.Stage;
 
-       public class Meucontrollerfruta {
+public class Meucontrollerfruta {
 
-        @FXML
-        private ImageView frutacaindo;
+ @FXML
+ private ImageView frutacaindo;
 
-        @FXML
-        private ImageView frutaapodecer;
+ @FXML
+ private ImageView frutaapodecer;
 
-        @FXML
-        private TextField peso;
+ @FXML
+ private TextField peso;
 
-        @FXML
-        private TextField cor;
+ @FXML
+ private TextField cor;
 
-        @FXML
-        private TextField nome;
+ @FXML
+ private TextField nome;
 
-        @FXML
-        private ImageView frutamadura;
+ @FXML
+ private ImageView frutamadura;
 
-        @FXML
-        void btncadastar(ActionEvent event) {
-         System.out.println("Cadastrado");
-         nome.setText("");
-         cor.setText("");
-         peso.setText("");
-        }
+ // Instância da classe DAO para operações no banco de dados
+ private FrutaDAO frutaDAO = new FrutaDAO();
 
+ // Cadastrar a fruta no banco de dados
+ @FXML
+ void btncadastar(ActionEvent event) {
+  String nomeFruta = nome.getText();
+  String corFruta = cor.getText();
+  String pesoFruta = peso.getText();
 
-        @FXML
-        void btnamadurecer(ActionEvent event) {
-        System.out.println("Amadurecendo");
-        frutamadura.setVisible(true);
-        frutaapodecer.setVisible(false);
-        frutacaindo.setVisible(false);
-        }
+  frutaDAO.cadastrarFruta(nomeFruta, corFruta, pesoFruta);
 
-        @FXML
-        void btncair(ActionEvent event) {
-         System.out.println("Caindo");
-         frutacaindo.setVisible(true);
-         frutaapodecer.setVisible(false);
-         frutacaindo.setVisible(false);
-        }
+  // Limpar campos após cadastro
+  nome.setText("");
+  cor.setText("");
+  peso.setText("");
+ }
 
-        @FXML
-        void btnapodrecer(ActionEvent event) {
-        System.out.println("Apodrecendo");
-         frutacaindo.setVisible(false);
-         frutaapodecer.setVisible(true);
-         frutacaindo.setVisible(false);
-        }
+ // Amadurecer a fruta (alterar o estado das imagens)
+ @FXML
+ void btnamadurecer(ActionEvent event) {
+  System.out.println("Amadurecendo");
+  frutamadura.setVisible(true);
+  frutaapodecer.setVisible(false);
+  frutacaindo.setVisible(false);
+ }
 
-    
+ // Fazer a fruta cair (alterar o estado das imagens)
+ @FXML
+ void btncair(ActionEvent event) {
+  System.out.println("Caindo");
+  frutacaindo.setVisible(true);
+  frutaapodecer.setVisible(false);
+  frutamadura.setVisible(false);
+ }
 
-
+ // Apodrecer a fruta (alterar o estado das imagens)
+ @FXML
+ void btnapodrecer(ActionEvent event) {
+  System.out.println("Apodrecendo");
+  frutacaindo.setVisible(false);
+  frutaapodecer.setVisible(true);
+  frutamadura.setVisible(false);
+ }
 }

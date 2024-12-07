@@ -135,4 +135,7 @@ public class MeuControllermenu {
     void btnpessoas(ActionEvent event) {
         // Ação para o botão pessoas
     }
+
+    public static class MeuControllersapo {
+    }
 }
